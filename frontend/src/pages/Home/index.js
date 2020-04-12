@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+import { Button } from 'antd';
 
 export default function Home() {
     return (
-        <h1>Olá mundo!</h1>
+        <Button type="danger">Teste</Button>
     )
 }

@@ -1,0 +1,17 @@
+div.logo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.logo h2 {
+    color: #fff;
+}
+
+div.break {
+    flex-basis: 100%;
+}
+
+div.logo small {
+    color: #fff;
+}
