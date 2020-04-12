@@ -1,6 +1,8 @@
 <?php
 include 'connection.php';
 
+header("Access-Control-Allow-Origin: *");
+
 $sql = "SELECT * FROM user";
 
 $query = $pdo->prepare($sql);

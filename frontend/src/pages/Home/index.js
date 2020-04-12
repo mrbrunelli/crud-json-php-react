@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button, Card } from 'antd';
 import { useHistory } from 'react-router-dom';
 import './styles.css'
+import axios from 'axios'
 
 import api from '../../services/api'
 
@@ -15,6 +16,14 @@ export default function Home() {
             .then(res => {
                 setUsers(res.data)
             })
+
+        // fetch("http://localhost/MatheusRicardoBrunelli/crud-react/backend/read.php", {
+        //     "method": "GET",
+        //     "mode":"no-cors"
+        // })
+        //     .then(response => {
+        //         console.log(response);
+        //     })
     })
 
     return (
