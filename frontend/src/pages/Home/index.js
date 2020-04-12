@@ -29,7 +29,7 @@ export default function Home() {
     return (
         <div className="content">
             {users.map(user => (
-                <Card key={user.id_user}>
+                <Card key={user.id_user} className="card">
                     <strong>Nome</strong>
                     <h2>{user.name}</h2>
 
