@@ -33,24 +33,24 @@ export default function Admin(props) {
                         </Menu.Item>
                         <Menu.Item key="2">
                             <UserOutlined />
-                            <span className="nav-text">Cadastrar</span>
+                            <Link to="/cadastrar"><span className="nav-text">Cadastrar</span></Link>
                         </Menu.Item>
                     </Menu>
                 </Sider>
-                <Layout>
-                    <Header className="site-layout-sub-header-background" style={{ padding: 0 }} />
-                    <Content style={{ margin: '24px 16px 0' }}>
-                        <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-                            {props.children}
-                        </div>
-                    </Content>
-                    <Footer style={{ textAlign: 'center' }}>
-                        CRUD JSON | PHP & ReactJs
+        <Layout>
+            <Header className="site-layout-sub-header-background" style={{ padding: 0 }} />
+            <Content style={{ margin: '24px 16px 0' }}>
+                <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
+                    {props.children}
+                </div>
+            </Content>
+            <Footer style={{ textAlign: 'center' }}>
+                CRUD JSON | PHP & ReactJs
                         <br />
-                        <code><a href="https://github.com/mrbrunelli/crud-json-php-react" target="_blank">Desenvolvido por Matheus R. Brunelli</a></code>
-                    </Footer>
-                </Layout>
-            </Layout>
-        </div>
+                <code><a href="https://github.com/mrbrunelli/crud-json-php-react" target="_blank">Desenvolvido por Matheus R. Brunelli</a></code>
+            </Footer>
+        </Layout>
+            </Layout >
+        </div >
     )
 }
