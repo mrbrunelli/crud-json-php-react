@@ -27,9 +27,11 @@ export default function Home() {
     })
 
     return (
-        <div className="content">
+        <div className="home-content">
             {users.map(user => (
-                <Card key={user.id_user} className="card">
+                <Card key={user.id_user} className="home-content-card">
+                    <p>{user.id_user}</p>
+
                     <strong>Nome</strong>
                     <h2>{user.name}</h2>
 
