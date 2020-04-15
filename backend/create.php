@@ -7,7 +7,7 @@ $_POST = array_merge($_POST, (array) $json_obj);
 
 $name = $_POST['name'];
 $email = $_POST['email'];
-$pass = md5($_POST['pass']);
+$pass = md5($_POST['password']);
 
 $sql = "INSERT INTO user (name, email, password) VALUES (?, ?, ?)";
 

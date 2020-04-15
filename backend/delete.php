@@ -7,7 +7,7 @@ $json_obj = json_decode($json_str);
 $_DELETE = array_merge($_DELETE, (array) $json_obj);
 
 
-$id = $_DELETE['id'];
+$id = $_DELETE['id_user'];
 
 $sql = "DELETE FROM user where id_user = ? limit 1";
 
